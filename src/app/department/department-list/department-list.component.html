@@ -1,0 +1,42 @@
+<!-- <p>department-list works!</p> -->
+<hr>
+<a routerLink="/departments/add"routerLinkActive="active1"> ADD </a>|
+
+<table class="table mx-auto">
+  <thead>
+    <tr>
+      <!-- <th scope="col">#</th> -->
+      <th scope="col">ID</th>
+      <th scope="col">NAME</th>
+      <th scope="col">LOCATION</th>
+      <th scope="col">DETAILS</th>
+      <th scope="col">EDIT</th>
+      <th scope="col">DELETE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor='let item of departments'>
+      <td>{{item._id}}</td>
+      <td>{{item.name}}</td>
+      <td>{{item.location}}</td>
+        <!-- <app-rate [rating]="item.rate"></app-rate> -->
+        <!-- <app-rate ></app-rate> -->
+      <!-- </td> -->
+      <td>
+        <a [routerLink]="['/departments','details',item._id]" routerLinkActive="active1"> Details </a>
+      </td>
+      <td>
+        <button class="btn btn-primary"(click)='edit(item._id)'>edit</button>
+        <!-- <a [routerLink]="['/departments','edit',item._id]" routerLinkActive="active1"> edit </a> -->
+
+      </td>
+      <td>
+        <button class="btn btn-danger"(click)='delete(item._id)'>delete</button>
+
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+<router-outlet></router-outlet>
+<!-- <app-department-details></app-department-details> -->

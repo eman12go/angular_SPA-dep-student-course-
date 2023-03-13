@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+@import '../node_modules/font-awesome/css/font-awesome.css';
+@import '../node_modules/bootstrap/dist/css/bootstrap.css' ;
+@import './assets/images/style.css' ;
+
+.active1{
+  background-color: rgb(239, 203, 215);
+}

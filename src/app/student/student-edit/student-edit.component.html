@@ -1,0 +1,22 @@
+<div class="alert alert-danger">
+
+  <!-- {{dep._id}}:{{dep.name}}:{{dep.location}} -->
+  <!-- {{dep|json}} -->
+  <label>id</label>
+    <input type="number"[(ngModel)] =' std._id'[value]= 'std._id' /> <br>
+    <label>name</label>
+    <input type="text"[(ngModel)] =' std.name'[value]=' std.name' /> <br>
+    <label>age</label>
+    <input type="number"[(ngModel)] =' std.age'[value]= 'std.age' /> <br>
+
+    <label>department</label>
+    <input type="number"[(ngModel)] =' std.department'[value]= 'std.department' /> <br>
+
+
+    <label>course</label>
+    <input type="number"[(ngModel)] =' std.course'[value]= 'std.course' /> <br>
+
+       <br>
+
+       <button (click)="saveEdit()">save</button>
+  </div>

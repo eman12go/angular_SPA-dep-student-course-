@@ -1,0 +1,18 @@
+<div class="alert alert-danger">
+  <label>id</label>
+  <input type="number"[(ngModel)] =' dep._id'/> <br>
+  <label>name</label>
+  <input type="text"[(ngModel)] =' dep.name' /> <br>
+  <label>location</label>
+  <!-- <input type="text"[(ngModel)] =' dep.location' /> <br> -->
+  <select [(ngModel)] =' dep.location' >
+    <option>mansoura</option>
+    <option>zag</option>
+    <option>cairo</option>
+    <option>Giza</option>
+    <option>alex</option>
+  </select>
+     <br>
+
+  <button (click)="save()">save</button>
+</div>

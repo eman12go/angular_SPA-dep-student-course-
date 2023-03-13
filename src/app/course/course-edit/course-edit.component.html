@@ -1,0 +1,18 @@
+<div class="alert alert-danger">
+
+  <!-- {{dep._id}}:{{dep.name}}:{{dep.location}} -->
+  <!-- {{dep|json}} -->
+  <label>id</label>
+    <input type="number"[(ngModel)] =' crs._id'[value]= 'crs._id' /> <br>
+    <label>name</label>
+    <input type="text"[(ngModel)] =' crs.name'[value]=' crs.name' /> <br>
+    <label>rate</label>
+   <input [(ngModel)] =' crs.rate' [value]=' crs.rate' /> <br>
+
+    <label>Duration</label>
+   <input [(ngModel)] =' crs.duration' [value]=' crs.duration' /> <br>
+
+       <br>
+
+       <button (click)="saveEdit()">save</button>
+  </div>
